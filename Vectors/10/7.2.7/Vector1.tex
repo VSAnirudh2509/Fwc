@@ -19,20 +19,18 @@
 \section*{Excercise 7.2}
 
 Q7.Find the coordinates of point A, where AB is the diameter of a circle where the center is (2,-3) and B is the point (1,4):
-\begin{enumerate}
-	\item $B\brak{1,4}, C\brak{-2,3}$
-\end{enumerate}
+
 \solution
 \begin{enumerate}
-\item The coordinates are given as
+\item The coordinates given C as the Center and B which is one of the coordinates of diameter AB.
 	\begin{align}
 	\vec{B} = \myvec{
 		1\\
 	    4\\
 		},
 	\vec{C} = \myvec{
-	   -2\\
-		3\\
+	    2\\
+	   -3\\
 		},
 	\end{align}
 	
@@ -41,42 +39,15 @@ Let us assume the coordinates of A. Now, C is the center which is midpoint of li
 		
 Hence,	
 	\begin{align}
-	\vec{C} &= \frac{1}{2}\vec{(A+B)}\\
-	\myvec{
-	    2\\
-	   -3\\
-		} &= \frac{\vec{A+B}}{2} \\
-		\myvec{
-	    2\\
-	   -3\\
-		} &= \frac{1}{2}\brak{\myvec{A\\}+\myvec{1\\4\\}} \\
-		\myvec{
-	    2\\
-	   -3\\
-		} &= \frac{1}{2}\myvec{A+1\\A+4\\}\\
-		\myvec{
-	    2\\
-	   -3\\
-		} &= \myvec{(A+1)/2\\(A+4)/2\\}	
+	\vec{C} = \frac{\vec{A+B}}{2} \\
+		\vec{2C} &= \vec{A}+\vec{B} \\
+		\vec{A} &= \vec{2C}-\vec{B} \\
+		\vec{A} &= 2\myvec{2\\-3\\}-\myvec{1\\4\\} \\
+		\vec{A} &= \myvec{4\\-6\\}-\myvec{1\\4\\} \\
+		\vec{A} &= \myvec{4-1\\-6-4\\} \\	
+		\vec{A} &= \myvec{3\\-10\\}	
 	\end{align}       
-	 From equation (5) we need to find the values of which are the coordinates of A. Thus,
-    \begin{align}	                     
-	{(A+1)/2} = 2\\
-	\implies  
-	\brak{(A+1)}& = 4 \\
-	\implies 
-	\brak{A}& = (3)
-    \end{align}
-    Similarly,
-    \begin{align}
-    {(A+4)/2} = -3\\
-    \implies
-    \brak{(A+4)}& = -6 \\
-    \implies
-    \brak {A}& = (-10)
-    \end{align}
-    Hence, therefore value for given point $\vec{B(1,4)}$ and center $\vec{C(-2,3)}$ is 3 and -10 respectively. So the coordinates of A is given by 
-  $\vec{A(3,-10)}$.	
+    Therefore,the coordinates of A for value for given point $\vec{B(1,4)}$ and center $\vec{C(2,-3)}$ given by $\vec{A(3,-10)}$.	
 \hspace{5mm}
 \begin{figure}[!h]
 \begin{center}	
