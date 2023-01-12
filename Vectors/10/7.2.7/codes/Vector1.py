@@ -73,13 +73,11 @@ def circ_gen(O,r):
 
 #Input parameters
 r1 = np.sqrt(50)       #radius   #distance of points from center
-A = np.array(([3,-10]))   #center
-#r2 = 4
 C = np.array(([2,-3]))
-#r3 = 5
 B = np.array(([1,4]))
 
-#e1 = np.array(([1,0]))
+A=2*C-B
+print(A)
 
 ###Generating the circle
 x_circ3= circ_gen(C,r1)
