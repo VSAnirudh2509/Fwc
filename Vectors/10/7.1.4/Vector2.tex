@@ -46,17 +46,19 @@ Now, the direction vectors of AB,BC and CA are:
 		\vec{B} - \vec{C} = \myvec{6\\4} - \myvec{7\\-2} = \myvec{-1\\6}\\
 		\vec{C} - \vec{A} = \myvec{7\\-2} - \myvec{5\\-2} = \myvec{2\\0}		
 	\end{align}
+    Therefore,from the above equations (3) and (4), solving them(Norming and Equating) we get,
 	\begin{align}
-	(\vec{A}-\vec{B})^\top (\vec{B}-\vec{C}) &= \myvec{-1&-6} \myvec{-1\\6} = 37 \\
-	(\vec{B}-\vec{C})^\top (\vec{C}-\vec{A}) &= \myvec{1&6} \myvec{2\\0}   = -2 \\
-	(\vec{C}-\vec{A})^\top (\vec{A}-\vec{B}) &= \myvec{2&0} \myvec{-1\\-6} = -2	
+ 		\norm{\vec{A}-\vec{B}} = \sqrt{(-1)^2+(-6)^2} = \sqrt{1+36} = \sqrt{37} 
+	\end{align}  
+	Similarly,
+	\begin{align}
+		\norm{\vec{B}-\vec{C}} = \sqrt{(-1)^2+(6)^2} = \sqrt{1+36} = \sqrt{37}
+\end{align}	  	
+From (6) and (7), we can say that
+	\begin{align}
+		\norm{\vec{A}-\vec{B}} = \norm{\vec{B}-\vec{C}}
 	\end{align}
-    Therefore,from the above equation we can see that,
-	\begin{align}
- {\vec{A} -\vec{B}}\perp {\vec{B} -\vec{C}}\\
-	\angle BCA = \angle CAB   
-	\end{align}    	
-Thus, the given points proves that, it is an Isosceles Triangle.
+Therefore the two sides are equal and thus, the given points proves that it is an Isosceles Triangle.
 \begin{figure}[!h]
 	\begin{center} 
 	    \includegraphics[width=\columnwidth]{figs/Vector2.png}
