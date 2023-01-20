@@ -60,19 +60,63 @@ From (6) and (7), we can say that
 	\end{align}
 Therefore the two sides are equal and thus, the given points proves that it is an Isosceles Triangle.
 To check wether the given points form a triangle using rank of matrix is,
-\begin{align}
- \vec{A} \times \vec{B} = \myvec{\mydet{\vec{X}_{12}&\vec{Y}_{21}\\\vec{X}_{21}&\vec{Y}_{22}\\\vec{X}_{31}&\vec{Y}_{32}}}
-\end{align}
-\begin{align}
- \mydet{\vec{X}_{12}&\vec{Y}_{21}}&=\mydet{-1&6\\2&0}=\myvec{0-12}=-12\\
- \mydet{\vec{X}_{21}&\vec{Y}_{22}}&=\mydet{-1&-6\\2&0}=\myvec{0-(-12)}=12\\
- \mydet{\vec{X}_{31}&\vec{Y}_{32}}&=\mydet{-1&-6\\-1&6}=\myvec{-6-6}=-12
-\end{align}
-Since, 
-\begin{align}
-\mydet{\vec{X}_{12}&\vec{Y}_{21}} = \mydet{\vec{X}_{31}&\vec{Y}_{32}}
-\end{align}
 Hence, the two sides are equal and proves to be a Isosceles Triangle.
+\begin{align} 
+ \vec{n}^\top\vec{x}=\vec{c} \\
+\end{align}
+Assuming c=0
+\begin{align}
+\myvec{
+-1 & -6
+\\
+-1 & 6
+\\
+2 & 0
+}^\top\vec{x}=0 
+\end{align}
+\begin{align}
+\myvec{
+-1 & -1 & 2
+\\
+-6 & 6 & 0
+}
+\xrightarrow[]{R_1=\frac{R_1}{-1}}
+\myvec{
+1 & 1 & -2
+\\
+-6 & 6 & 0                 
+}	  
+\\
+\xrightarrow[]{R_2=R_2-6R_1}
+\myvec{
+1 & 1 & -2
+\\
+0 & 12 & -12
+}
+\xrightarrow[]{R_2=\frac{R_2}{12}}
+\myvec{
+1 & 1 & -2
+\\
+0 & 1 & -1
+}\\
+\xrightarrow[]{R_1=R_1-R_2}
+\myvec{
+1 & 0 & -1
+\\
+0 & 1 & -1}
+\end{align}
+\begin{align}
+\myvec{
+1 & 0 & -1
+\\
+0 & 1 & -1}\vec{x}=0
+\end{align}
+From equation 15, we get two equations x1-x3=0 and x1-x3=0.Thus,
+\begin{align}
+\vec{x1}=\vec{x3} \\
+\vec{x1}=\vec{x3}
+\end{align}
+From, this we can conclude that the given points are Isosceles Triangle.
 \begin{figure}[!h]
 	\begin{center} 
 	    \includegraphics[width=\columnwidth]{figs/Vector2.png}
