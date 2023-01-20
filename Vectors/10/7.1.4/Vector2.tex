@@ -59,6 +59,20 @@ From (6) and (7), we can say that
 		\norm{\vec{A}-\vec{B}} = \norm{\vec{B}-\vec{C}}
 	\end{align}
 Therefore the two sides are equal and thus, the given points proves that it is an Isosceles Triangle.
+To check wether the given points form a triangle using rank of matrix is,
+\begin{align}
+ \vec{A} \times \vec{B} = \myvec{\mydet{\vec{X}_{12}&\vec{Y}_{21}\\\vec{X}_{21}&\vec{Y}_{22}\\\vec{X}_{31}&\vec{Y}_{32}}}
+\end{align}
+\begin{align}
+ \mydet{\vec{X}_{12}&\vec{Y}_{21}}&=\mydet{-1&6\\2&0}=\myvec{0-12}=-12\\
+ \mydet{\vec{X}_{21}&\vec{Y}_{22}}&=\mydet{-1&-6\\2&0}=\myvec{0-(-12)}=12\\
+ \mydet{\vec{X}_{31}&\vec{Y}_{32}}&=\mydet{-1&-6\\-1&6}=\myvec{-6-6}=-12
+\end{align}
+Since, 
+\begin{align}
+\mydet{\vec{X}_{12}&\vec{Y}_{21}} = \mydet{\vec{X}_{31}&\vec{Y}_{32}}
+\end{align}
+Hence, the two sides are equal and proves to be a Isosceles Triangle.
 \begin{figure}[!h]
 	\begin{center} 
 	    \includegraphics[width=\columnwidth]{figs/Vector2.png}
@@ -67,5 +81,4 @@ Therefore the two sides are equal and thus, the given points proves that it is a
 \label{fig:Fig}
 \end{figure}
 \end{enumerate}
-\end{document}
-	
+\end{document}	
