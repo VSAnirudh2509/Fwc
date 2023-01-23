@@ -31,8 +31,8 @@ def line_gen(A,B):
      temp1 = A + lam_1[i]*(B-A)
      x_AB[:,i]= temp1.T
    return x_AB
-if (C-B)@(C-A) == (A-C)@(A-B):
-    print("AB=BC, The triangle is isosceles")
+a=np.linalg.norm(A-B)
+b=np.linalg.norm(B-C)
 
 #
 #Generating all lines
