@@ -64,7 +64,7 @@ Now, making the given points into matrix and solving them to get the rank of mat
 0&1&\frac{1}{8}
 }
 	\end{align}
-Since we have two linearly independent rows hence Rank of Matrix,Rank(P) = 2 and if the rank is 2, it is proved that it is a Triangle. To prove it is an Isosceles Triangle,
+Since we have two linearly independent rows hence Rank of Matrix,Rank(P) = 2 and if the rank is 2, it is proved that it is a Triangle.
 	\begin{align}
 \vec{A}-\vec{B} = \myvec{5\\-2} - \myvec{6\\4} &= \myvec{-1\\-6} \\
 \vec{B}-\vec{C} = \myvec{6\\4} - \myvec{7\\-2} &= \myvec{-1\\6} \\
@@ -83,6 +83,57 @@ From (8) and (9), we can say that,
 \norm{\vec{A}-\vec{B}} = \norm{\vec{B}-\vec{C}} 
 	\end{align}
 Here two sides are equal and therefore we can say that the given points proves that it is an Isosceles Triangle.
+To check wether the given points form a triangle using rank of matrix is,
+Hence, the two sides are equal and proves to be a Isosceles Triangle.
+	\begin{align}
+\vec{n}^\top\vec{x}=\vec{c}
+	\end{align}
+Assuming c=0
+	\begin{align}
+\myvec{
+-1 & -6
+\\
+-1 & 6
+\\
+2 & 0
+}^\top\vec{x}=0
+	\end{align}
+	\begin{align}
+\myvec{
+-1 & -1 & 2
+\\
+-6 & 6 & 0
+}\xrightarrow[]{R_1=\frac{R_1}{-1}}
+\myvec{
+1 & 1 & -2
+\\
+-6 & 6 & 0
+}
+\\\xrightarrow[]{R_2=R_2-6R_1}
+\myvec{
+1 & 1 & -2
+\\
+0 & 12 & -12
+}
+\xrightarrow[]{R_2=\frac{R_2}{12}}
+\myvec{
+1 & 1 & -2
+\\
+0 & 1 & -1
+}
+	\end{align}
+	\begin{align}
+\myvec{
+1 & 0 & -1
+\\
+0 & 1 & -1}\vec{x}=0
+	\end{align}
+From, equation (15), we get two equations $x_1-x_3=0$ and $x_1-x_3=0$ thus,
+	\begin{align}
+\vec{x_1}=\vec{x_3} \\
+\vec{x_1}=\vec{x_3}	
+	\end{align}	
+From, this we can conclude that the given points form an Isosceles Triangle. 		
 \begin{figure}[!h]
 	\begin{center} 
 	    \includegraphics[width=\columnwidth]{figs/Vector2.png}
