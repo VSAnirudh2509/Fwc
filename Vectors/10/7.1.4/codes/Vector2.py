@@ -33,7 +33,8 @@ def line_gen(A,B):
    return x_AB
 a=np.linalg.norm(A-B)
 b=np.linalg.norm(B-C)
-
+if a==b:
+ print('AB=BC, the Traingle is Isosceles')
 #
 #Generating all lines
 x_AB = line_gen(A,B)
