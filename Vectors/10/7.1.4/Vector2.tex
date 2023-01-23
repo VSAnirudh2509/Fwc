@@ -41,84 +41,31 @@ Now, the direction vectors of AB,BC and CA are:
 	   -2\\
 	    }
 	\end{align}  
+Now, making the given points into matrix and solving them to get the rank of matrix.Assuming P is the matrix.
 	\begin{align}
-		\vec{A} - \vec{B} = \myvec{5\\-2} - \myvec{6\\4} = \myvec{-1\\-6}\\
-		\vec{B} - \vec{C} = \myvec{6\\4} - \myvec{7\\-2} = \myvec{-1\\6}\\
-		\vec{C} - \vec{A} = \myvec{7\\-2} - \myvec{5\\-2} = \myvec{2\\0}		
-	\end{align}
-    Therefore,from the above equations (3) and (4), solving them(Norming and Equating) we get,
-	\begin{align}
- 		\norm{\vec{A}-\vec{B}} = \sqrt{(-1)^2+(-6)^2} = \sqrt{1+36} = \sqrt{37} 
-	\end{align}  
-	Similarly,
-	\begin{align}
-		\norm{\vec{B}-\vec{C}} = \sqrt{(-1)^2+(6)^2} = \sqrt{1+36} = \sqrt{37}
-\end{align}	  	
-From (6) and (7), we can say that
-	\begin{align}
-		\norm{\vec{A}-\vec{B}} = \norm{\vec{B}-\vec{C}}
-	\end{align}
-Therefore the two sides are equal and thus, the given points proves that it is an Isosceles Triangle.
-To check wether the given points form a triangle using rank of matrix is,
-Hence, the two sides are equal and proves to be a Isosceles Triangle.
-\begin{align} 
- \vec{n}^\top\vec{x}=\vec{c} \\
-\end{align}
-Assuming c=0
-\begin{align}
+\vec{P} = \myvec{
+5&6&7\\
+-2&4&-2
+}\xrightarrow[]{R_2=\frac{R_2}{2}}
 \myvec{
--1 & -6
-\\
--1 & 6
-\\
-2 & 0
-}^\top\vec{x}=0 
-\end{align}
-\begin{align}
+5&6&7\\
+-1&2&-1
+}\xrightarrow[]{R_1=\frac{R_1}{5}}
 \myvec{
--1 & -1 & 2
-\\
--6 & 6 & 0
+1&\frac{6}{5}&\frac{7}{5}\\
+-1&2&-1
+}\\\xrightarrow[]{R_2=R_2+R_1}
+\myvec{
+1&\frac{6}{5}&\frac{7}{5}\\
+0&\frac{16}{5}&\frac{2}{5}
+}\xrightarrow[]{R_2=\frac{R_2}{16/5}}
+\myvec{
+1&\frac{6}{5}&\frac{7}{5}\\
+0&1&\frac{1}{8}
 }
-\xrightarrow[]{R_1=\frac{R_1}{-1}}
-\myvec{
-1 & 1 & -2
-\\
--6 & 6 & 0                 
-}	  
-\\
-\xrightarrow[]{R_2=R_2-6R_1}
-\myvec{
-1 & 1 & -2
-\\
-0 & 12 & -12
-}
-\xrightarrow[]{R_2=\frac{R_2}{12}}
-\myvec{
-1 & 1 & -2
-\\
-0 & 1 & -1
-}\\
-\xrightarrow[]{R_1=R_1-R_2}
-\myvec{
-1 & 0 & -1
-\\
-0 & 1 & -1}
-\end{align}
-\begin{align}
-\myvec{
-1 & 0 & -1
-\\
-0 & 1 & -1}\vec{x}=0
-\end{align}
-From equation 15, we get two equations $x_1-x_3$=0 and $x_1-x_3$=0.Thus,
-\begin{align}
-\vec{x1}-\vec{x3}=0 \\
-\vec{x1}-\vec{x3}=0 \\
-\vec{x1}=\vec{x3} \\
-\vec{x1}=\vec{x3}
-\end{align}
-From, this we can conclude that the given points are Isosceles Triangle.
+	\end{align}
+Since we have two linearly independent rows hence Rank of Matrix,Rank(P) = 2.
+Therefore, as the rank is 2, it is proved that the given points are Isosceles Triangle.
 \begin{figure}[!h]
 	\begin{center} 
 	    \includegraphics[width=\columnwidth]{figs/Vector2.png}
