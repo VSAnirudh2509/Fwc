@@ -64,8 +64,25 @@ Now, making the given points into matrix and solving them to get the rank of mat
 0&1&\frac{1}{8}
 }
 	\end{align}
-Since we have two linearly independent rows hence Rank of Matrix,Rank(P) = 2.
-Therefore, as the rank is 2, it is proved that the given points are Isosceles Triangle.
+Since we have two linearly independent rows hence Rank of Matrix,Rank(P) = 2 and if the rank is 2, it is proved that it is a Triangle. To prove it is an Isosceles Triangle,
+	\begin{align}
+\vec{A}-\vec{B} = \myvec{5\\-2} - \myvec{6\\4} &= \myvec{-1\\-6} \\
+\vec{B}-\vec{C} = \myvec{6\\4} - \myvec{7\\-2} &= \myvec{-1\\6} \\
+\vec{C}-\vec{A} = \myvec{7\\-2} - \myvec{5\\2} &= \myvec{2\\0}
+	\end{align}
+From the equations (5) and (6), solving them(Norming and Equating) we get,
+	\begin{align}
+\norm{\vec{A}-\vec{B}} = \sqrt{(-1)^2+(-6)^2} = \sqrt{1+36} = \sqrt{37}
+ 	\end{align}
+Similarly,
+	\begin{align}
+\norm{\vec{B}-\vec{C}} = \sqrt{(-1)^2+(6)^2} = \sqrt{1+36} = \sqrt{37} 
+	\end{align}
+From (8) and (9), we can say that,
+	\begin{align}
+\norm{\vec{A}-\vec{B}} = \norm{\vec{B}-\vec{C}} 
+	\end{align}
+Here two sides are equal and therefore we can say that the given points proves that it is an Isosceles Triangle.
 \begin{figure}[!h]
 	\begin{center} 
 	    \includegraphics[width=\columnwidth]{figs/Vector2.png}
