@@ -44,15 +44,25 @@
 \begin{enumerate}
 \item[Q14.] Find the coordinates of the foot of the perpendicular from (-1 3) to the line 3x-4y-16=0.  
 \section{Solution}
-The given perpendicular point can be taken as $\vec{P(-1,3)}$.Let us assume the coordinates.
+The given perpendicular point can be taken as,
 \begin{align}
-\vec{A(a,b)}
+ \vec{P}\myvec{
+-1\\
+3
+}
+\end{align}
+.Let us assume the coordinates,
+\begin{align}
+\vec{A}\myvec{
+a\\
+b
+}
 \end{align}
 To find the coordinates of foot of perpendicular from point to line is given as:
 \begin{align}
 \myvec{
 m&n
-}^\top A = \myvec{
+}^\top \vec{A} = \myvec{
 m^\top\\
 c
 }
@@ -81,9 +91,9 @@ Here $\vec{m}$ is directional vector of the given line
 Substituting all values in (4), we get
 \begin{align}
 \myvec
-{4&3\\3&-4}A&=\myvec{(4&3)&\myvec{-1\\3}\\&16}\\
+{4&3\\3&-4}\vec{A}&=\myvec{(4&3)&\myvec{-1\\3}\\&16}\\
 \myvec
-{4&3\\3&-4}A&=\myvec{5\\16}  \label{9}
+{4&3\\3&-4}\vec{A}&=\myvec{5\\16}  \label{9}
 \end{align}
 The augmented matrix for the system equations in (9) is expressed as
 \begin{align}
@@ -122,7 +132,6 @@ Hence,
 \begin{align}
 \vec{A}=\myvec{\frac{68}{25}\\\frac{-49}{25}}
 \end{align}
-Thus, $\vec{A}(68/25,-49/25)$ is the coordinate from Point $\vec{P}$ to the line $3x-4y-16=0$.
 \begin{figure}[!h]
 	\begin{center} 
 	    \includegraphics[width=\columnwidth]{figs/lines.png}
