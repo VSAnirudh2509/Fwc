@@ -35,9 +35,24 @@ def line_dir_pt(m,A,k1,k2):
     temp1 = A + lam_1[i]*m
     x_AB[:,i]= temp1.T
   return x_AB
+
+
+
+def compute_point_on_line(a,b,c):
+    y=c/b
+    p=np.array([0,y])
+    return p
+
+
+
+
+#enter the coeffcients of line
+
+A=compute_point_on_line(3,-4,16);
+
+
 n=np.array([3,-4])
 omat=np.array(([0,1],[-1,0]));
-A=np.array([0,-4]);
 m=omat@n;
 
 
